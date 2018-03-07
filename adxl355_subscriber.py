@@ -28,7 +28,7 @@ client.username_pw_set(user, password)
 client.on_connect = on_connect
 client.on_message = on_message
 try:    
-    client.connect("10.42.0.1", 1883, 10)  
+    client.connect("192.168.11.17", 1883, 10)  
     client.loop_forever()  
 except KeyboardInterrupt:  
     client.disconnect()

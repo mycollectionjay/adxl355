@@ -43,7 +43,7 @@ class tMqtt(threading.Thread):
         self.lock=True
     def  run( self ):    
         try:    
-            client.connect("10.42.0.1", 1883, 10)  
+            client.connect("localhost", 1883, 10)  
             client.loop_forever()  
         except KeyboardInterrupt:  
             client.disconnect()
