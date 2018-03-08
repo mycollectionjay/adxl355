@@ -121,9 +121,9 @@ if __name__ == '__main__':
 		if dt.second/10<1:
 			strTime+='0'
 		if len(str(dt.microsecond))<6:
-            for it in range(6-len(str(dt.microsecond))):
-                    strTime+='0'        
-        strTime+=str(dt.microsecond)
+            		for it in range(6-len(str(dt.microsecond))):
+                    		strTime+='0'        
+        		strTime+=str(dt.microsecond)
 		
 		
 		if counter%1000==0:
